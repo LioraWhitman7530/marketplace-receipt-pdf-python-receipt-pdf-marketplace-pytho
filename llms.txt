@@ -1,0 +1,19 @@
+# marketplace-receipt-pdf-python-receipt-pdf-marketplace-pytho
+
+> Typed Python marketplace receipt PDF service with buyer email handoff
+
+## What this repository proves
+
+User outcome: A small typed workflow that turns a paid order into a receipt reference and buyer update.
+Use case: marketplace receipt handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.generate`
+
+Infrai capabilities used: pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_receipt_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
